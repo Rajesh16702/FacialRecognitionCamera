@@ -4,7 +4,7 @@ def vid2photos():
 	counter = 0
 
 	cap = cv2.VideoCapture(0)
-	cap.set(cv2.cv.CV_CAP_PROP_FPS, 1)
+	cap.set(cv2.CAP_PROP_FPS, 1)
 
 	while (cap.isOpened()):
 		ret, frame = cap.read()

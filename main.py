@@ -14,9 +14,9 @@ if __name__ == "__main__":
 	for i in range (1, frameCount-1):
 		centroidPerFrame[i] = face_detect("image" + str(i) + ".jpg")
 	newlist = centroidPerFrame.remove(0)
-	print newlist
+	print(newlist)
 	cleanList = [x for x in centroidPerFrame if x != [[], []]]
-	print cleanList
+	print(cleanList)
 
 	#degree = pixel2degree (cleanList, "image1.jpg")
 	#print degree
